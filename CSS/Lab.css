@@ -1,0 +1,78 @@
+.Lab_Services_Section {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin-inline: 2%;
+}
+
+.LabService {
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    flex-direction: column;
+    border-radius: 10px;
+}
+#LabServicess{
+    height: 40vh;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.LabServiceImage {
+    width: 100%;
+
+}
+
+.LabServiceText {
+    width: 70%;
+}
+
+.LabServiceBackground {
+    background-color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.LabServiceH3 {
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    margin: 5px;
+}
+
+.LabServiceP {
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.imageLite {
+    position: absolute;
+    padding-left: 250px;
+    height: 60px;
+    opacity: 50%;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .LabServicesRow {
+        flex-direction: column;
+    }
+
+    .LabService {
+        padding: 10px;
+        margin: 10px;
+        width: 85%;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+}

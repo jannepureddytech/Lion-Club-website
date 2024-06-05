@@ -1,0 +1,125 @@
+.AboutUsSection1 {
+    display: flex;
+    justify-content: center;
+}
+
+.MainSection {
+    margin: 30px;
+    padding: 30px;
+}
+
+.AboutUs {
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #001958;
+}
+
+.AboutUsData {
+
+    padding: 5px;
+    margin: 5px;
+    width: 50%;
+}
+
+.AboutUsImage {
+
+    padding: 5px;
+    margin: 5px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.AboutUsHeading {
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 66.6px;
+    color: #001958;
+}
+
+.AboutUsPara {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    .AboutUsSection1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .AboutUsPara {
+        text-align: center;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+
+    .AboutUsData {
+        padding: 5px;
+        margin: 5px;
+        width: 100%;
+    }
+
+    .AboutUsImage {
+       
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .MainSection {
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+    .image{
+        width: 350px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .AboutUsSection1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .AboutUsPara {
+        text-align: center;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+
+    .AboutUsData {
+        padding: 5px;
+        margin: 5px;
+        width: 100%;
+    }
+
+    .AboutUsImage {
+       
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .MainSection {
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+    .image{
+        width: 350px;
+    }
+
+   
+}

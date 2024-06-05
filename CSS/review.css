@@ -1,0 +1,148 @@
+.Reviews_container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.Reviews_title {
+    font-family: Yaldevi Jaffna;
+    color: #001958;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 66.46px;
+    text-align: center;
+    margin: 42px 0;
+
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+
+}
+
+.column {
+    width: calc(50% - 10px);
+
+}
+
+.column input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+.dropdown {
+    border: 1px solid rgb(202, 202, 202);
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.selectopt {
+    border: none;
+    width: 10rem;
+    text-align: left;
+}
+
+
+.radios {
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+
+}
+
+.Reviews_subtitle {
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 17px;
+
+
+}
+
+.rating {
+    display: flex;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+    line-height: 70px;
+    justify-content: space-between;
+}
+
+.star {
+
+    transition: color 0.1s;
+    width: 44.74px;
+    height: 44px;
+    padding: 4.58px 4.66px 4.58px 4.66px;
+    gap: 0px;
+    opacity: 1px;
+
+}
+
+.star:hover,
+.star.active {
+    color: #FAFF00;
+}
+
+.star_container {
+    text-align: right;
+}
+
+.rating_container {
+    text-align: left;
+}
+
+p {
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+.overall_review_title {
+    font-family: Lato;
+    color: #001958;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 36px;
+
+}
+
+.overall_star_container {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 41px;
+}
+
+.submitbtn {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+

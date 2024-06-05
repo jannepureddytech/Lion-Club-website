@@ -1,0 +1,468 @@
+.section-1 {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+
+}
+
+.c-image {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+
+.carousel-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
+
+
+
+.logoImage {
+  height: 8vh;
+  width: auto;
+
+}
+
+.HeaderButtons {
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
+}
+
+.HeaderButton {
+  margin-right: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400; 
+}
+
+
+.sliderContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  height: 100%;
+  margin-top: 20%;
+}
+
+.sliderContentt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  height: 10%;
+  margin-top: 10%;
+}
+
+
+
+
+.sliderButton {
+  cursor: pointer;
+  width: 120px;
+  background-color: #002B99;
+  color: white;
+
+
+}
+#sliderButton{
+  cursor: pointer;
+  width: 120px;
+  background-color: #002B99;
+  color: white;
+
+
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Semi-transparent background */
+  color: rgb(252, 249, 249);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  /* Add some padding for better visibility */
+  width: 100%;
+
+}
+
+
+
+
+
+.carousel-item img {
+  height: 100vh;
+  /* Adjust image height */
+  object-fit: cover;
+  /* Ensure images cover the entire carousel area */
+}
+
+.fixed {
+  position: absolute;
+  top: 1;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Ensure the header is above other content */
+}
+
+
+.mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7vh;
+  background-color: black;
+
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactsFont {
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+
+
+.contacts {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+
+
+}
+
+.contact_Email {
+  margin-inline: 100px;
+}
+
+.contactImage {
+  width: 40px;
+  padding-inline: 10px;
+}
+
+.socialmediaImage {
+  width: 35px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.underlined-text {
+  
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  /* Adjust the thickness of the underline */
+  text-underline-offset: 8px;
+  
+}
+
+.h1tag {
+  font-size: 50px;
+  font-weight: 600;
+
+}
+
+.h1tag2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #FFD500;
+
+}
+
+.ptag {
+  font-size: 20px;
+}
+
+.heightHome {
+  height: 85vh;
+
+}
+
+.BannerHeight {
+  height: 70vh;
+}
+
+#atag {
+
+  color: white;
+  text-decoration: none;
+}
+
+.Dropdownn {
+  background-color: rgba(0, 0, 0, 0.001);
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+  margin-right: 50px;
+  margin-bottom: 8px;
+}
+
+.servicesDropDown {
+  background-color: #002B99;
+
+
+}
+
+.PhoneHeader {
+  display: none;
+}
+
+.fontColor {
+  color: #FFD500;
+}
+#greenText{
+  color: #FFD500;
+  text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: -100%
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .companycontacts,
+
+  .Services,
+  .Address {
+    max-width: 100%;
+
+  }
+
+  .MainInfo,
+  .Services {
+    display: none;
+  }
+  .logoImage{
+    height: 5vh;
+    margin: 5px;
+    margin-left: 20px;
+  }
+  .header{
+    height: 7vh;
+  }
+  .BannerHeight {
+    height: 30vh;
+    
+  }
+  .carousel-item img {
+    height: 30vh;
+    /* Adjust image height */
+    object-fit: cover;
+    /* Ensure images cover the entire carousel area */
+  }
+  .MainContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  .Dropdown{
+    height: 2vh;
+  }
+  .PhoneMenu{
+    height: 2vh;
+  }
+
+  .section-1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .PhoneHeader {
+    display: inline;
+    
+  }
+
+  .HeaderButtons {
+    display: none;
+  }
+
+  .mainHeader {
+    display: none;
+  }
+
+  .c-image {
+    object-fit: cover;
+
+
+  }
+
+  .slider-image {
+    display: none;
+    background-color: black;
+  }
+
+  .imageLite {
+    display: none;
+  }
+
+  .sliderContentt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 20%;
+    margin-top: -10%;
+  }
+  .h1tag {
+    font-size: 20px;
+    font-weight: 400;
+  
+  }
+  
+  .h1tag2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFD500;
+  
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+  .companycontacts,
+
+  .Services,
+  .Address {
+    max-width: 100%;
+
+  }
+
+  .MainInfo,
+  .Services {
+    display: none;
+  }
+  .logoImage{
+    height: 5vh;
+    margin: 5px;
+    margin-left: 20px;
+  }
+  .header{
+    height: 7vh;
+  }
+  .BannerHeight {
+    height: 30vh;
+    
+  }
+  .carousel-item img {
+    height: 30vh;
+    /* Adjust image height */
+    object-fit: cover;
+    /* Ensure images cover the entire carousel area */
+  }
+  .MainContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+  .Dropdown{
+    height: 2vh;
+  }
+  .PhoneMenu{
+    height: 2vh;
+  }
+
+  .section-1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .PhoneHeader {
+    display: inline;
+    
+  }
+
+  .HeaderButtons {
+    display: none;
+  }
+
+  .mainHeader {
+    display: none;
+  }
+
+  .c-image {
+    object-fit: cover;
+
+
+  }
+
+  .slider-image {
+    display: none;
+    background-color: black;
+  }
+
+  .imageLite {
+    display: none;
+  }
+
+  .sliderContentt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 20%;
+    margin-top: 12%;
+  }
+  .h1tag {
+    font-size: 20px;
+    font-weight: 400;
+  
+  }
+  
+  .h1tag2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFD500;
+  
+  }
+
+
+}

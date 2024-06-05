@@ -1,0 +1,46 @@
+
+
+.SpecialistService {
+    padding: 25px;
+    margin: 10px;
+    width: 40%;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.SpecialistServiceImage{
+    width: 100%;
+    
+}
+
+.SpecialistServiceText{
+    width: 70%;
+}
+
+.SpecialistServiceBackground{
+    background-color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.SpecialistServiceH3{
+    font-size: 35px;
+    color: white;
+    font-weight: 900;
+    margin: 5px;
+}
+.SpecialistServiceP{
+    font-size: 17px;
+    color: white;
+    font-weight: 400;
+    line-height: 2;
+    margin: 5px;
+}
+
+.imageLite {
+    position: absolute;
+    padding-left: 350px;
+    height: 80px;
+    opacity: 50%;
+}

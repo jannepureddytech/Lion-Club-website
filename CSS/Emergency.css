@@ -1,0 +1,94 @@
+.Emergency_Services_Section {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin-inline: 4%;
+}
+
+.PTagEmergency {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.emergencyServicesRow {
+
+    width: 100%;
+}
+
+.emergencyService {
+    padding: 20px;
+    margin: 10px;
+    width: 50%;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+
+.emergencyServiceBackground {
+    background-color: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.emergencyServiceText {
+    width: 70%;
+}
+
+.emergencyServiceH3 {
+    font-size: 25px;
+    color: white;
+    font-weight: 900;
+    margin: 5px;
+}
+
+.emergencyServiceP {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 5px;
+}
+
+.emergencyServiceImage {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.imageLite {
+    position: absolute;
+    padding-left: 350px;
+    height: 80px;
+    opacity: 50%;
+
+
+}
+
+/* Portrait phones */
+@media screen and (max-width: 600px) {
+    .imageLite {
+        display: none; 
+    }
+
+    .emergencyServicesRow{
+        flex-direction: column;
+    }
+   
+  }
+  
+  /* Landscape phones */
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    .imageLite {
+        display: none; 
+    }
+    
+    .emergencyServicesRow{
+        flex-direction: column;
+    }
+   
+}
+  
