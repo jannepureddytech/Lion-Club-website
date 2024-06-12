@@ -39,7 +39,7 @@
   margin-right: 50px;
   cursor: pointer;
   font-size: 18px;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 
@@ -72,7 +72,8 @@
 
 
 }
-#sliderButton{
+
+#sliderButton {
   cursor: pointer;
   width: 120px;
   background-color: #002B99;
@@ -170,12 +171,11 @@
 }
 
 .underlined-text {
-  
+
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  /* Adjust the thickness of the underline */
   text-underline-offset: 8px;
-  
+
 }
 
 .h1tag {
@@ -188,6 +188,7 @@
   font-size: 50px;
   font-weight: 600;
   color: #FFD500;
+  white-space: pre;
 
 }
 
@@ -234,7 +235,8 @@
 .fontColor {
   color: #FFD500;
 }
-#greenText{
+
+#greenText {
   color: #FFD500;
   text-decoration: none;
 
@@ -271,24 +273,29 @@
   .Services {
     display: none;
   }
-  .logoImage{
+
+  .logoImage {
     height: 5vh;
     margin: 5px;
     margin-left: 20px;
   }
-  .header{
+
+  .header {
     height: 7vh;
   }
+
   .BannerHeight {
     height: 30vh;
-    
+
   }
+
   .carousel-item img {
     height: 30vh;
     /* Adjust image height */
     object-fit: cover;
     /* Ensure images cover the entire carousel area */
   }
+
   .MainContainer {
     flex-direction: column;
     justify-content: center;
@@ -296,10 +303,12 @@
 
 
   }
-  .Dropdown{
+
+  .Dropdown {
     height: 2vh;
   }
-  .PhoneMenu{
+
+  .PhoneMenu {
     height: 2vh;
   }
 
@@ -311,7 +320,7 @@
 
   .PhoneHeader {
     display: inline;
-    
+
   }
 
   .HeaderButtons {
@@ -345,17 +354,18 @@
     height: 20%;
     margin-top: -10%;
   }
+
   .h1tag {
     font-size: 20px;
     font-weight: 400;
-  
+
   }
-  
+
   .h1tag2 {
     font-size: 20px;
     font-weight: 400;
     color: #FFD500;
-  
+
   }
 
 
@@ -377,24 +387,29 @@
   .Services {
     display: none;
   }
-  .logoImage{
+
+  .logoImage {
     height: 5vh;
     margin: 5px;
     margin-left: 20px;
   }
-  .header{
+
+  .header {
     height: 7vh;
   }
+
   .BannerHeight {
     height: 30vh;
-    
+
   }
+
   .carousel-item img {
     height: 30vh;
     /* Adjust image height */
     object-fit: cover;
     /* Ensure images cover the entire carousel area */
   }
+
   .MainContainer {
     flex-direction: column;
     justify-content: center;
@@ -402,10 +417,12 @@
 
 
   }
-  .Dropdown{
+
+  .Dropdown {
     height: 2vh;
   }
-  .PhoneMenu{
+
+  .PhoneMenu {
     height: 2vh;
   }
 
@@ -417,7 +434,7 @@
 
   .PhoneHeader {
     display: inline;
-    
+
   }
 
   .HeaderButtons {
@@ -451,17 +468,18 @@
     height: 20%;
     margin-top: 12%;
   }
+
   .h1tag {
     font-size: 20px;
     font-weight: 400;
-  
+
   }
-  
+
   .h1tag2 {
     font-size: 20px;
     font-weight: 400;
     color: #FFD500;
-  
+
   }
 
 

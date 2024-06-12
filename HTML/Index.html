@@ -85,8 +85,24 @@
                     <img class="d-block c-image" src="../Resources/bghome1.png" alt="First slide">
                     <div class="carousel-caption d-none d-md-block sliderContentt ">
 
-                        <span class="h1tag">welcome to <span class="h1tag2">jr reddy <br> </span>lion club </span>
+                        <span class="h1tag">Dr. JR Reddy Lions Hospital <br> Is Best In <span class="h1tag2"></span>
+                        </span> </span>
+                        <script>
+                            const typedText = document.querySelector('.h1tag2');
+                            const textToType = 'UROLOGY ...';
 
+                            let charIndex = 0;
+
+                            function typeChar() {
+                                if (charIndex < textToType.length) {
+                                    typedText.textContent += textToType[charIndex];
+                                    charIndex++;
+                                    setTimeout(typeChar, 100);
+                                }
+                            }
+
+                            typeChar();
+                        </script>
                     </div>
                 </div>
             </div>
@@ -199,7 +215,7 @@
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Physiotherapy</h3>
-                    <p class="textcenter  LabServiceP lato">Physiotherapy helps to restore movement and function when
+                    <p class="textcenter  LabServiceP lato">Physiotherapy helps to restore movement and function when
                         someone</p>
 
                 </div>
@@ -236,25 +252,25 @@
             <div class="gallery-item1">
                 <img class="mainGallery " src="../Resources/LionsClub_Hospital.png" alt="Image">
                 <div class="details">
-                    <p>JR. Reddy Lions Hospital</p>
+                    <p style="margin-top: 9rem;">JR. Reddy Lions Hospital</p>
                 </div>
             </div>
             <div class="gallery-item1">
                 <img class="mainGallery" src="../Resources/Dental_Hospital.png" alt="Image">
                 <div class="details">
-                    <p>JR. Reddy Lions Dental Hospital</p>
+                    <p style="margin-top: 9rem;">JR. Reddy Lions Dental Hospital</p>
                 </div>
             </div>
             <div class="gallery-item1">
                 <img class="mainGallery" src="../Resources/LionsClub_Hospital.png" alt="Image">
                 <div class="details">
-                    <p>JR. Reddy Lions Hospital</p>
+                    <p style="margin-top: 9rem;">JR. Reddy Lions Hospital</p>
                 </div>
             </div>
             <div class="gallery-item1">
                 <img class="mainGallery" src="../Resources/Ramureddy_Main.png" alt="Image">
                 <div class="details">
-                    <p>Dr. J. Ramu Reddy</p>
+                    <p style="margin-top: 9rem;"> Dr. J. Ramu Reddy</p>
                 </div>
             </div>
 

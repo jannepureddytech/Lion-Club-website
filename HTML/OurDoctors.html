@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,10 @@
     <title>Lion Club</title>
 
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
 </head>
+
 <body>
 
 
@@ -59,7 +61,7 @@
             <h4 class='HeaderButton'> <a href="./AboutUs.html" id="atag">About Us</a></h4>
             <div class="dropdown">
                 <button class="Dropdownn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
+                    Services
                 </button>
                 <ul class="dropdown-menu ">
                     <li><a class="dropdown-item" href="./Emergency.html">Emergency</a></li>
@@ -81,16 +83,34 @@
                 <div class="carousel-item active slider-image ">
                     <img class="d-block c-image" src="../Resources/bg7.png" alt="First slide">
                     <div class="carousel-caption d-none d-md-block sliderContentt ">
-                      
-                        <span class="h1tag">Our JR Reddy Lions Hospital Doctors Are Best At <span class="h1tag2">Surgeries ... </span> </span>
 
+                        <span class="h1tag">Our JR Reddy Lions Hospital Doctors <br> Are Best At <span
+                                class="h1tag2"></span>
+                        </span> </span>
+
+                        <script>
+                            const typedText = document.querySelector('.h1tag2');
+                            const textToType = 'Surgeries ...';
+
+                            let charIndex = 0;
+
+                            function typeChar() {
+                                if (charIndex < textToType.length) {
+                                    typedText.textContent += textToType[charIndex];
+                                    charIndex++;
+                                    setTimeout(typeChar, 100);
+                                }
+                            }
+
+                            typeChar();
+                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    
+
 
 
 
@@ -102,193 +122,269 @@
                 <h2 class="doctorH2 Yaldevi">Dr. J. Ramu Reddy</h2>
                 <h3 class="doctorH3 Unlock">JR. Reddy Lions Hospital</h3>
                 <h4 class="doctorH4 sonsie">Chairman</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">J R Reddy Lions Club Hospital is a Govt Regd., 50 bedded hospital with economy, Pvt. & deluxe rooms. It’s well equipped with latest state of the art medical equipment like Digital XRay, computerized lab with auto analyzers, ICU with Ventilators and Modern labour room to deliver quality treatment. <img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">J R Reddy Lions Club Hospital is a Govt Regd., 50 bedded
+                    hospital with economy, Pvt. & deluxe rooms. It’s well equipped with latest state of the art medical
+                    equipment like Digital XRay, computerized lab with auto analyzers, ICU with Ventilators and Modern
+                    labour room to deliver quality treatment. <img style=" margin-left:10px"
+                        src="../Resources/coma2.png" alt=""> </p>
 
             </div>
             <div class="DoctorImage">
-                <img class="DoctorProfileImage" src="../Resources/DrRamReddy.png"  alt="">
+                <img class="DoctorProfileImage" src="../Resources/DrRamReddy.png" alt="">
             </div>
         </div>
         <div class="Doctor">
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
             <div class="DoctorData marginleft">
                 <h2 class="doctorName Yaldevi">Dr.Sathyanarayana..(MBBS.MD)</h2>
                 <h3 class="doctorDezignation Yaldevi">General Physician / Diabetologist</h3>
                 <h4 class="doctorExperience lato">10 Years Experience</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">He is our experienced diabetologist, dedicated to providing specialized care for patients with diabetes. With a focus on personalized treatment plans, lifestyle adjustments, and o ngoing support,he helps patients achieve and maintain optimal health. Trust in his expertise and compassion for comprehensive diabetes management tailored to your individual needs. <img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">He is our experienced diabetologist, dedicated to providing
+                    specialized care for patients with diabetes. With a focus on personalized treatment plans, lifestyle
+                    adjustments, and o ngoing support,he helps patients achieve and maintain optimal health. Trust in
+                    his expertise and compassion for comprehensive diabetes management tailored to your individual
+                    needs. <img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
 
             </div>
-           
+
         </div>
         <div class="Doctor">
             <div class="DoctorData">
                 <h2 class="doctorName Yaldevi">Dr.J.Vikram Rao..(MBBS.DNB)</h2>
                 <h3 class="doctorDezignation Yaldevi">General Physician / Diabetologist</h3>
                 <h4 class="doctorExperience lato">10 Years Experience</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">He dedicated to personalized diabetes care. With a focus on comprehens ive treatment plans, lifestyle adjustments, and ongoing support, he helps patients achieve optimal health. Trust in his expertise for compassionate and effective management of diabetes, tailored to your unique needs. Empowering you with knowledge and tools.<img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">He dedicated to personalized diabetes care. With a focus on
+                    comprehens ive treatment plans, lifestyle adjustments, and ongoing support, he helps patients
+                    achieve optimal health. Trust in his expertise for compassionate and effective management of
+                    diabetes, tailored to your unique needs. Empowering you with knowledge and tools.<img
+                        style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
             </div>
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
-           
+
         </div>
         <div class="Doctor">
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
             <div class="DoctorData marginleft">
                 <h2 class="doctorName Yaldevi">Dr.Mahathi..(MBBS.OSM)</h2>
                 <h3 class="doctorDezignation Yaldevi">Meternity / Infertility</h3>
                 <h4 class="doctorExperience lato">10 Years Experience</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">specializing in personalized and comprehensive care for women throughout pregnancy, childbirth, and the postpartum period. Our team is dedicated to providing expert guidance, support services, and tailored care plans to ensure a healthy and fulfilling journey into motherhood for every patient." <img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">specializing in personalized and comprehensive care for women
+                    throughout pregnancy, childbirth, and the postpartum period. Our team is dedicated to providing
+                    expert guidance, support services, and tailored care plans to ensure a healthy and fulfilling
+                    journey into motherhood for every patient." <img style=" margin-left:10px"
+                        src="../Resources/coma2.png" alt=""> </p>
 
             </div>
-           
+
         </div>
         <div class="Doctor">
             <div class="DoctorData">
                 <h2 class="doctorName Yaldevi">Dr.Gouthami..(MBBS.MS)</h2>
                 <h3 class="doctorDezignation Yaldevi">Gynacologist / OBG</h3>
                 <h4 class="doctorExperience lato">10 Years Experience</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">She is our experienced gynecologist specializing in women's health and wellness. With a focus on comprehensive care, preventive screenings, and personalized treatment plans, Dr. Gowthami is dedicated to addressing a wide range of gynecological needs, from reproductive health to menopause management. <img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">She is our experienced gynecologist specializing in women's
+                    health and wellness. With a focus on comprehensive care, preventive screenings, and personalized
+                    treatment plans, Dr. Gowthami is dedicated to addressing a wide range of gynecological needs, from
+                    reproductive health to menopause management. <img style=" margin-left:10px"
+                        src="../Resources/coma2.png" alt=""> </p>
             </div>
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
-           
+
         </div>
         <div class="Doctor">
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
             <div class="DoctorData marginleft">
                 <h2 class="doctorName Yaldevi">Dr.Karan Patel..(MBBS.MS)</h2>
                 <h3 class="doctorDezignation Yaldevi">Orthopedic surgeon</h3>
                 <h4 class="doctorExperience lato">10 Years Experience</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">He is our skilled orthopedic surgeon with expertise in treating musculoskeletal conditions and injuries. Specializing in surgical and non-surgical interventions, Dr. Karan Patel provides personalized care to patients, helping them regain mobility, alleviate pain, and improve overall musculoskeletal health.<img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">He is our skilled orthopedic surgeon with expertise in
+                    treating musculoskeletal conditions and injuries. Specializing in surgical and non-surgical
+                    interventions, Dr. Karan Patel provides personalized care to patients, helping them regain mobility,
+                    alleviate pain, and improve overall musculoskeletal health.<img style=" margin-left:10px"
+                        src="../Resources/coma2.png" alt=""> </p>
 
             </div>
-           
+
         </div>
         <div class="Doctor">
             <div class="DoctorData">
                 <h2 class="doctorName Yaldevi">Dr.Sudesh..(MBBS.MS)</h2>
                 <h3 class="doctorDezignation Yaldevi">Orthopedic surgeon</h3>
                 <h4 class="doctorExperience lato">10 Years Experience</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">He is our experienced orthopedic surgeon, specializing in diagnosing, treating, and managing a wide range of musculoskeletal conditions. From fractures to joint replacements, our orthopedic surgeon offers personalized care and advanced surgical techniques for improved mobility and quality of life.<img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">He is our experienced orthopedic surgeon, specializing in
+                    diagnosing, treating, and managing a wide range of musculoskeletal conditions. From fractures to
+                    joint replacements, our orthopedic surgeon offers personalized care and advanced surgical techniques
+                    for improved mobility and quality of life.<img style=" margin-left:10px"
+                        src="../Resources/coma2.png" alt=""> </p>
             </div>
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
-           
+
         </div>
         <div class="Doctor">
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
             <div class="DoctorData marginleft">
                 <h2 class="doctorName Yaldevi">Dr.Sruthi Reddy..(MBBS.MD)</h2>
                 <h3 class="doctorDezignation Yaldevi">Pediatric</h3>
                 <h4 class="doctorExperience lato">10 Years Experience</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">She is our compassionate pediatric specialist, dedicated to providing expert care for children's health and wellness. With a focus on comprehensive diagnosis, treatment, and preventive care, our specialist ensures the well-being and development of young patients, fostering a nurturing and supportive healthcare environment.<img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">She is our compassionate pediatric specialist, dedicated to
+                    providing expert care for children's health and wellness. With a focus on comprehensive diagnosis,
+                    treatment, and preventive care, our specialist ensures the well-being and development of young
+                    patients, fostering a nurturing and supportive healthcare environment.<img style=" margin-left:10px"
+                        src="../Resources/coma2.png" alt=""> </p>
 
             </div>
-           
+
         </div>
         <div class="Doctor">
             <div class="DoctorData">
                 <h2 class="doctorName Yaldevi">Dr.Bhavani Pujitha..(MBBS.MD)</h2>
                 <h3 class="doctorDezignation Yaldevi">Dermatologist</h3>
                 <h4 class="doctorExperience lato">10 Years Experience</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">She is our skilled dermatologist, specializing in diagnosing and treating a wide range of skin conditions. From acne to skin cancer, our dermatologist offers personalized care, advanced treatments, and skincare advice to help patients achieve healthy and glowing skin.<img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">She is our skilled dermatologist, specializing in diagnosing
+                    and treating a wide range of skin conditions. From acne to skin cancer, our dermatologist offers
+                    personalized care, advanced treatments, and skincare advice to help patients achieve healthy and
+                    glowing skin.<img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
             </div>
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
-           
+
         </div>
         <div class="Doctor">
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
             <div class="DoctorData marginleft">
                 <h2 class="doctorName Yaldevi">Dr.Srinivas Goud..(MBBS.MS)</h2>
                 <h3 class="doctorDezignation Yaldevi">General / Laproscopic Surgeon</h3>
                 <h4 class="doctorExperience lato">10 Years Experience</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">He is our expert laparoscopic surgeon, specializing in minimally invasive surgical procedures for various abdominal conditions. With precision and advanced techniques, our surgeon ensures faster recovery times, reduced scarring, and improved outcomes for patients undergoing laparoscopic surgery.<img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">He is our expert laparoscopic surgeon, specializing in
+                    minimally invasive surgical procedures for various abdominal conditions. With precision and advanced
+                    techniques, our surgeon ensures faster recovery times, reduced scarring, and improved outcomes for
+                    patients undergoing laparoscopic surgery.<img style=" margin-left:10px" src="../Resources/coma2.png"
+                        alt=""> </p>
 
             </div>
-           
+
         </div>
         <div class="Doctor">
             <div class="DoctorData">
                 <h2 class="doctorName Yaldevi">Dr.Vinay..(MBBS.DA)</h2>
                 <h3 class="doctorDezignation Yaldevi">Anastatist & Critical care</h3>
                 <h4 class="doctorExperience lato">10 Years Experience</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">He is our skilled anesthetist, specializing in administering anesthesia and ensuring patient comfort and safety during surgical procedures. With expertise in pain management and monitoring vital signs, our anesthetist plays a crucial role in providing a smooth and successful surgical experience for every patient.<img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">He is our skilled anesthetist, specializing in administering
+                    anesthesia and ensuring patient comfort and safety during surgical procedures. With expertise in
+                    pain management and monitoring vital signs, our anesthetist plays a crucial role in providing a
+                    smooth and successful surgical experience for every patient.<img style=" margin-left:10px"
+                        src="../Resources/coma2.png" alt=""> </p>
             </div>
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
-           
+
         </div>
         <div class="Doctor">
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
             <div class="DoctorData marginleft">
                 <h2 class="doctorName Yaldevi">Dr. J. Ramu Reddy</h2>
                 <h3 class="doctorDezignation Yaldevi">JR. Reddy Lions Hospital</h3>
                 <h4 class="doctorExperience lato">Chairman</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">J R Reddy Lions Club Hospital is a Govt Regd., 50 bedded hospital with economy, Pvt. & deluxe rooms. It’s well equipped with latest state of the art medical equipment like Digital XRay, computerized lab with auto analyzers, ICU with Ventilators and Modern labour room to deliver quality treatment. <img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">J R Reddy Lions Club Hospital is a Govt Regd., 50 bedded
+                    hospital with economy, Pvt. & deluxe rooms. It’s well equipped with latest state of the art medical
+                    equipment like Digital XRay, computerized lab with auto analyzers, ICU with Ventilators and Modern
+                    labour room to deliver quality treatment. <img style=" margin-left:10px"
+                        src="../Resources/coma2.png" alt=""> </p>
 
             </div>
-           
+
         </div>
         <div class="Doctor">
             <div class="DoctorData">
                 <h2 class="doctorName Yaldevi">Dr.Raghuveer..(MBBS.MS.MCH)</h2>
                 <h3 class="doctorDezignation Yaldevi">consultant Urologist</h3>
                 <h4 class="doctorExperience lato">10 Years Experience</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">He is our experienced urologist, specializing in the diagnosis and treatment of urinary tract and reproductive system disorders. With a focus on personalized care and advanced treatment options, our urologist provides comprehensive solutions for conditions such as kidney stones, prostate issues, and urinary incontinence, ensuring optimal urological health for every patient.<img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">He is our experienced urologist, specializing in the
+                    diagnosis and treatment of urinary tract and reproductive system disorders. With a focus on
+                    personalized care and advanced treatment options, our urologist provides comprehensive solutions for
+                    conditions such as kidney stones, prostate issues, and urinary incontinence, ensuring optimal
+                    urological health for every patient.<img style=" margin-left:10px" src="../Resources/coma2.png"
+                        alt=""> </p>
             </div>
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
-           
+
         </div>
         <div class="Doctor">
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
             <div class="DoctorData marginleft">
                 <h2 class="doctorName Yaldevi">Dr.Raghu Ram..(MBBS.MS.MCH)</h2>
                 <h3 class="doctorDezignation Yaldevi">Consultant Neuro Physician</h3>
                 <h4 class="doctorExperience lato">10 Years Experience</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">He is our dedicated neurologist, specializing in the diagnosis and treatment of neurological disorders affecting the brain, spinal cord, and nervous system. With expertise in managing conditions like epilepsy, stroke, and Parkinson's disease, our neurologist offers personalized care and advanced treatment options for improved neurological health and quality of life. <img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">He is our dedicated neurologist, specializing in the
+                    diagnosis and treatment of neurological disorders affecting the brain, spinal cord, and nervous
+                    system. With expertise in managing conditions like epilepsy, stroke, and Parkinson's disease, our
+                    neurologist offers personalized care and advanced treatment options for improved neurological health
+                    and quality of life. <img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
 
             </div>
-           
+
         </div>
         <div class="Doctor">
             <div class="DoctorData">
                 <h2 class="doctorName Yaldevi">Dr.Ranga Swamy..(MBBS.MS.MCH)</h2>
                 <h3 class="doctorDezignation Yaldevi">consultant Plastic Surgeon</h3>
                 <h4 class="doctorExperience lato">10 Years Experience</h4>
-                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px" src="../Resources/coma.png" alt="">He is our esteemed plastic surgeon, specializing in cosmetic and reconstructive procedures. With a focus on enhancing aesthetics and restoring function, our surgeon offers personalized treatment plans and advanced techniques for natural-looking results. Whether it's cosmetic enhancements or reconstructive surgeries, our plastic surgeon is dedicated to helping patients achieve their desired outcomes with safety and precision.<img style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
+                <p class="DoctorP lato"> <img style="margin-bottom: 10px ; margin-right:10px"
+                        src="../Resources/coma.png" alt="">He is our esteemed plastic surgeon, specializing in cosmetic
+                    and reconstructive procedures. With a focus on enhancing aesthetics and restoring function, our
+                    surgeon offers personalized treatment plans and advanced techniques for natural-looking results.
+                    Whether it's cosmetic enhancements or reconstructive surgeries, our plastic surgeon is dedicated to
+                    helping patients achieve their desired outcomes with safety and precision.<img
+                        style=" margin-left:10px" src="../Resources/coma2.png" alt=""> </p>
             </div>
             <div class="DoctorImage">
-                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png"  alt="">
+                <img class="DrProfileImage" src="../Resources/DrSatyanarayna.png" alt="">
             </div>
-           
+
         </div>
     </section>
 
 
 
-    
+
     <footer>
 
 
@@ -356,7 +452,7 @@
         </div>
     </footer>
 
-    
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -373,6 +469,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    
+
 </body>
-</html>                                                                                                                                                                                                 
+
+</html>
