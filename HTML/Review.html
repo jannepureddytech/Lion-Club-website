@@ -84,13 +84,18 @@
                 <div class="carousel-item active slider-image ">
                     <img class="d-block c-image" src="../Resources/bg8.png" alt="First slide">
                     <div class="carousel-caption d-none d-md-block sliderContentt ">
-                      
-                        <span class="h1tag">The compass<span class="h1tag2"> guiding choices <br> </span>shaped by experience. </span>
+
+
+                        <span class="h1tag">The compass<span class="h1tag2"><br> guiding choices</span> shaped by
+                            experience. </span>
+
+
 
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 
     
@@ -231,12 +236,58 @@
         // Get all rating containers
         const ratingContainers = document.querySelectorAll('.rating');
 
-        // Add event listener to each star
-        ratingContainers.forEach(container => {
-            container.addEventListener('click', event => {
-                const clickedStar = event.target;
-                const ratingId = container.id;
-                const ratingValue = parseInt(clickedStar.getAttribute('data-value'));
+
+            submitButton.addEventListener('click', () => {
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                const age = document.getElementById('age').value;
+                const doctorName = document.getElementById('doctorName').value;
+                const patientType = document.querySelector('input[name="patient_type"]:checked').value;
+
+                const hospitalRating = parseFloat(document.getElementById('hospital').getAttribute('data-rating'));
+                const doctorRating = parseFloat(document.getElementById('doctor').getAttribute('data-rating'));
+                const nursRating = parseFloat(document.getElementById('nurs').getAttribute('data-rating'));
+                const receptionRating = parseFloat(document.getElementById('reception').getAttribute('data-rating'));
+                const pharmacyRating = parseFloat(document.getElementById('pharmacy').getAttribute('data-rating'));
+                const facilitiesRating = parseFloat(document.getElementById('facilities').getAttribute('data-rating'));
+                const overallRating = parseFloat(document.getElementById('overall').getAttribute('data-rating'));
+
+                const data = {
+                    name,
+                    phone,
+                    age,
+                    doctorName,
+                    patientType,
+                    hospital: hospitalRating,
+                    doctor: doctorRating,
+                    nurs: nursRating,
+                    reception: receptionRating,
+                    pharmacy: pharmacyRating,
+                    facilities: facilitiesRating,
+                    overall: overallRating
+                };
+
+                fetch('http://192.168.0.175:3000/v1/api/review', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Success:', data);
+                        successMessage.style.display = 'block';
+                        setTimeout(() => {
+                            successMessage.style.display = 'none';
+                            resetForm();
+                        }, 3000);
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                    });
+            });
+
 
                 // Remove active class from all stars in the container
                 const stars = container.querySelectorAll('.star');

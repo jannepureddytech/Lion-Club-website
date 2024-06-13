@@ -54,12 +54,22 @@
 
 
 .radios {
+    display: flex;
+    flex-direction: row;
     font-family: Lato;
     font-size: 25px;
     font-weight: 400;
     line-height: 30px;
     text-align: left;
+    align-items: center;
     margin-bottom: 30px;
+
+}
+
+input[type=radio] {
+    margin: -56px;
+    width: 10rem;
+    height: 1.2em;
 
 }
 
@@ -140,14 +150,3 @@ p {
 .submitbtn {
     width: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -1,74 +1,85 @@
-
-.OurDoctor{
+.OurDoctor {
     flex-direction: column;
     padding: 2%;
     margin-inline: 4%;
 }
 
-.Doctor{
-   display: flex;
-   margin: 20px;
+.h1tag2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFD500;
+
 }
 
-.doctorH2{
+.Doctor {
+    display: flex;
+    margin: 20px;
+}
+
+.doctorH2 {
     font-weight: 900;
     font-size: 60px;
     color: #001958;
     margin-bottom: 10px;
 }
-.doctorH3{
+
+.doctorH3 {
     font-weight: 400;
     font-size: 40px;
     color: #001958;
     margin-bottom: 10px;
 }
-.doctorH4{
+
+.doctorH4 {
     font-weight: 400;
     font-size: 40px;
     color: #FFD500;
     margin-bottom: 10px;
 }
 
-.DoctorProfileImage{
+.DoctorProfileImage {
     height: 500px;
 }
 
-.DoctorP{
+.DoctorP {
     font-weight: 400;
     font-size: 22px;
     width: 90%;
     line-height: 1.5;
 }
 
-.DoctorData{
+.DoctorData {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
 
-.DrProfileImage{
+.DrProfileImage {
     height: 450px;
 }
-.doctorName{
+
+.doctorName {
     font-weight: 700;
     font-size: 40px;
     color: #001958;
     margin-bottom: 10px;
 }
-.doctorDezignation{
+
+.doctorDezignation {
     font-weight: 700;
     font-size: 25px;
     color: #002B99;
     margin-bottom: 10px;
 }
 
-.doctorExperience{
+.doctorExperience {
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 10px;
 
 }
-.marginleft{
+
+.marginleft {
     margin-left: 70px;
 }
