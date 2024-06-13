@@ -164,9 +164,8 @@
   padding-inline: 10px;
 }
 
-.socialmediaImage {
-  width: 35px;
-  height: auto;
+.socialmediaImages {
+  height: 30px;
   margin-left: 20px;
 }
 
@@ -243,7 +242,20 @@
 }
 
 
+.dropdown-menu {
+  background-color: transparent !important;
+}
+.dropdown-item {
+  color: white !important;
+  background-color: transparent !important;
+  padding: 3px 0px !important; /* Remove padding */
+}
 
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active {
+  color: white !important;
+  background-color: transparent !important;
+  text-decoration: none;
+}
 
 
 

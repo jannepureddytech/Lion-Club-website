@@ -94,13 +94,18 @@ input[type=radio] {
 }
 
 .star {
-
+    color: black;
     transition: color 0.1s;
     width: 44.74px;
     height: 44px;
     padding: 4.58px 4.66px 4.58px 4.66px;
     gap: 0px;
-    opacity: 1px;
+    opacity: 1px;          
+    text-shadow: 
+    1px 1px 1px #000000, 
+    -1px 1px 1px #000000, 
+    1px -1px 1px #000000, 
+    -1px -1px 1px #000000;
 
 }
 

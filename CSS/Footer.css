@@ -5,35 +5,43 @@
     background-color:  #171B2A;
     padding: 10px;
     color: white;
+    margin-top: 60px;
 }
 
 .companycontacts{
     padding: 10px;
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
+  
     width: 60%;
 }
 .aboutjprt{
-    text-align: center;
+    text-align: left;
     font-size: 20px;
+    width: 100%;
+    padding: 15px;
 }
 .socialMediaHandel{
     display: flex;
-    justify-content: center;
+    
     align-items: center;
-    padding: 15px;
+
 }
 .logo{
     margin: 15px;
+    height: 100px;
+    width: 100px;
+    
 }
 .MainInfo{
     padding: 10px;
     display: flex;
     padding-top: 25px;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     width: 40%;
+    justify-content: left;
     
 
 }
@@ -41,7 +49,7 @@
     padding: 10px;
     display: flex;
     padding-top: 25px;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     width: 40%;
     height: 100%;
@@ -50,42 +58,44 @@
 .h4tag{
     font-size: 35px;
     font-weight: 600;
+    text-align: left;
+    
 }
 .list{
     font-size: 22px;
     font-weight: 400;
     margin-top: 7px;
+    list-style: none;
 }
  .ulist{
     display: flex;
     flex-direction: column;
     align-items:baseline;
     width: 90%;
+    padding: 0px;
  }
 
  .Address{
     padding: 10px;
     display: flex;
     padding-top: 25px;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     width: 60%;
     
 }
 
 .MapAddress{
-    margin: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
 }
 
 
 .Mail{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
     
 }
 .ContactImage{
@@ -97,7 +107,6 @@
 }
 
 .h5tag{
-    text-align: center;
     font-size: 20px;
 }
 
@@ -106,6 +115,7 @@
 }
 .h3tag{
     font-size: 20px;
+    margin: 0px;
 }
 .socialmediaImage{
     height: 40px;
