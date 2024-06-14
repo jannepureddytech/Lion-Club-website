@@ -65,7 +65,6 @@
     font-size: 22px;
     font-weight: 400;
     margin-top: 7px;
-    list-style: none;
 }
  .ulist{
     display: flex;
@@ -73,6 +72,7 @@
     align-items:baseline;
     width: 90%;
     padding: 0px;
+    margin-left: 20px;
  }
 
  .Address{
