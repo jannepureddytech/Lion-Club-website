@@ -9,6 +9,7 @@
     background-color: #f0f0f0;
 }
 
+
 .title {
     text-align: center;
     color: #001958;
@@ -16,6 +17,7 @@
     font-weight: 900;
     line-height: 60px;
     margin-bottom: 30;
+    margin-top: 20px;
 }
 
 .gallery-container {
@@ -77,4 +79,26 @@
 .details p {
     margin: 0;
     font-size: 14px;
+}
+
+
+@media only screen and (max-width: 500px) {
+    
+.gallery-container {
+  
+    gap: 5px;
+    padding: 5px;
+    width: 100%;
+}
+#body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
 }

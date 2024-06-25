@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lion Hospital</title>
-    <link rel="stylesheet" href="../CSS/Main.css">
-    <link rel="stylesheet" href="../CSS/Lab.css">
-    <link rel="stylesheet" href="../CSS/Header.css">
-    <link rel="stylesheet" href="../CSS/mainHeader.css">
-    <link rel="stylesheet" href="../CSS/Footer.css">
-    <link rel="icon" href="../Resources/logo-main1.png" class="icon">
+    <link rel="stylesheet" href="./CSS/Main.css">
+    <link rel="stylesheet" href="./CSS/Lab.css">
+    <link rel="stylesheet" href="./CSS/mainHeader.css">
+    <link rel="stylesheet" href="./CSS/Footer.css">
+    <link rel="icon" href="./Resources/logo-main1.png" class="icon">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -26,11 +25,11 @@
 
         <div class='contacts'>
             <div class='contact_Email flex'>
-                <img class='contactImage' src='../Resources/mail.png' alt="mail" />
+                <img class='contactImage' src='./Resources/mail.png' alt="mail" />
                 <h6 class='contactsFont'>jrreddylionsclubhospital@gmail.com</h6>
             </div>
             <div class='contact_phoneNo flex'>
-                <img class='contactImage' src='../Resources/call.png' alt="call" />
+                <img class='contactImage' src='./Resources/call.png' alt="call" />
                 <h6 class='contactsFont'>+91 95154 12967, +91 72879 86947</h6>
             </div>
         </div>
@@ -44,10 +43,10 @@
     </div>
 
     <header class="header fixed">
-        <img class='logoImage' src="../Resources/logo-main1.png" alt="logo" />
+        <img class='logoImage' src="./Resources/logo-main1.png" alt="logo" />
         <div class="PhoneHeader">
-            <button class="Dropdown " type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img class="PhoneMenu" src="../Resources/menuWhite.png" alt="">
+            <button class="Dropdown PhoneDropdownButton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="PhoneMenu" src="./Resources/menuWhite.png" alt="">
             </button>
             <ul class="dropdown-menu ">
                 <li><a class="dropdown-item" href="./index.html">Home</a></li>
@@ -78,7 +77,6 @@
             <h4 class='HeaderButton'> <a href="./fullgallery.html" id="atag">Gallery</a></h4>
             <h4 class='HeaderButton'> <a href="./ourdoctors.html" id="atag">Our Doctors</a></h4>
             <h4 class='HeaderButton'> <a href="./review.html" id="atag">Reviews</a></h4>
-            <button type="button " class="btn  sliderButton">Contact Us</button>
         </div>
     </header>
 
@@ -86,7 +84,7 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
             <div class="carousel-inner BannerHeight">
                 <div class="carousel-item active slider-image ">
-                    <img class="d-block c-image" src="../Resources/bg5.png" alt="First slide">
+                    <img class="d-block c-image" src="./Resources/bg5.png" alt="First slide">
                     <div class="carousel-caption d-none d-md-block sliderContentt ">
                       
                         <span class="h1tag">Providing comprehensive <span class="h1tag2">laboratory service  </span>for accurate diagnostics and <span class="h1tag2">patient care</span></span>
@@ -103,229 +101,234 @@
 
 
     <section class="Lab_Services_Section">
-        <h2 class="textcenter headingServicesH2">Emergency Specialist</h2>
+        <h2 class="textcenter headingServicesH2">Lab Services</h2>
         <div class="LabServicesRow flexjcac">
-            <div class="LabService flexjcac" style="background-color: #001958;">
+            <div class="LabService flexjcac" style="background-color: #001958;"  >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Basic Health Profile</h3>
                     <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
+
 
                 </div>
             </div>
-            <div class="LabService flexjcac" style="background-color: #FFD500;">
+            <div class="LabService flexjcac" style="background-color: #FFD500;" >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Health Check-up</h3>
-                    <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <p class="textcenter  LabServiceP lato">(51 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
 
                 </div>
             </div>
-            <div class="LabService flexjcac" style="background-color: #008D85;">
+            <div class="LabService flexjcac" style="background-color: #008D85;" >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Major Health Check-up</h3>
                     <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
+
 
                 </div>
             </div>
 
         </div>
         <div class="LabServicesRow flexjcac">
-            <div class="LabService flexjcac" style="background-color: #E9726A;">
+            <div class="LabService flexjcac" style="background-color: #E9726A;" >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Diabetic Profile</h3>
-                    <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <p class="textcenter  LabServiceP lato">(40 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
+
 
                 </div>
             </div>
-            <div class="LabService flexjcac" style="background-color: #8300C1;">
+            <div class="LabService flexjcac" style="background-color: #8300C1;" >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Anemia Profile </h3>
-                    <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <p class="textcenter  LabServiceP lato">(17 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
 
                 </div>
             </div>
-            <div class="LabService flexjcac" style="background-color: #1C8D00;">
+            <div class="LabService flexjcac" style="background-color: #1C8D00;" >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Antenatal Profile</h3>
-                    <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <p class="textcenter  LabServiceP lato">(35 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
 
                 </div>
             </div>
 
         </div>
         <div class="LabServicesRow flexjcac">
-            <div class="LabService flexjcac" style="background-color: #8300C1;">
+            <div class="LabService flexjcac" style="background-color: #8300C1;" >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Cardiac Profile  </h3>
-                    <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <p class="textcenter  LabServiceP lato">(40 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
 
                 </div>
             </div>
-            <div class="LabService flexjcac" style="background-color: #24B2DF;">
+            <div class="LabService flexjcac" style="background-color: #24B2DF;" >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Arthritis Profile </h3>
-                    <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <p class="textcenter  LabServiceP lato">(21 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
 
                 </div>
             </div>
-            <div class="LabService flexjcac" style="background-color: #AF078A;">
+            <div class="LabService flexjcac" style="background-color: #AF078A;" >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Surgical Profile- Minor</h3>
-                    <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <p class="textcenter  LabServiceP lato">(40 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
 
                 </div>
             </div>
 
         </div>
         <div class="LabServicesRow flexjcac">
-            <div class="LabService flexjcac" style="background-color: #696969;">
+            <div class="LabService flexjcac" style="background-color: #696969;" >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Surgical Profile- Major</h3>
-                    <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <p class="textcenter  LabServiceP lato">(54 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
 
                 </div>
             </div>
-            <div class="LabService flexjcac" style="background-color:#000000;">
+            <div class="LabService flexjcac" style="background-color:#000000;" >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Vitamins Profile  </h3>
-                    <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <p class="textcenter  LabServiceP lato">(51 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
 
                 </div>
             </div>
-            <div class="LabService flexjcac" style="background-color:#EB0000;">
+            <div class="LabService flexjcac" style="background-color:#EB0000;" >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">CT Scaning</h3>
-                    <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <p class="textcenter  LabServiceP lato">(14 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
 
                 </div>
             </div>
 
         </div>
         <div class="LabServicesRow flexjcac">
-            <div class="LabService flexjcac" style="background-color: #8300C1;">
+            <div class="LabService flexjcac" style="background-color: #8300C1;" >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Digital X Ray</h3>
-                    <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <p class="textcenter  LabServiceP lato">(10 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
 
                 </div>
             </div>
-            <div class="LabService flexjcac" style="background-color: #AF078A;">
+            <div class="LabService flexjcac" style="background-color: #AF078A;" >
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
+                        <img src="./Resources/emergencyService/heart.png" alt="">
                     </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
+                    <img class="imageLite" src="./Resources/emergencyService/Hospital.png" alt="">
 
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Ultra Sound Scaning</h3>
-                    <p class="textcenter  LabServiceP lato">(30 Tests)</p>
+                    <p class="textcenter  LabServiceP lato">(29 Tests)</p>
+                    <button type="button " class="btn  sliderButton" onclick="redirectTo()">Book Now</button>
 
                 </div>
             </div>
-            <div class="LabService flexjcac" style="background-color: #AF078A;">
-                <div class="LabServiceImage flexjcac">
-                    <div class="LabServiceBackground flexjcac">
-                        <img src="../Resources/emergencyService/heart.png" alt="">
-                    </div>
-                    <img class="imageLite" src="../Resources/emergencyService/Hospital.png" alt="">
-
-                </div>
-                <div class="LabServiceText">
-                    <h3 class="textcenter LabServiceH3 Yaldevi">Basic Health Profile</h3>
-                    <p class="textcenter  LabServiceP lato">(30 Tests)</p>
-
-                </div>
+           
 
             </div>
 
@@ -341,7 +344,7 @@
         <div class="MainContainer">
             <div class="section-1 ">
                 <div class="companycontacts">
-                    <img class='logo' src="../Resources/logo-main1.png" alt="logo" />
+                    <img class='logo' src="./Resources/logo-main1.png" alt="logo" />
                     <h6 class="aboutjprt exo-2">J R Reddy Lions Club Hospital is a Govt Regd., 50 bedded hospital with economy, Pvt. & deluxe rooms.
                     </h6>
                     <div class="socialMediaHandel">
@@ -384,7 +387,7 @@
                         </h5>
                     </div>
                     <div class="Mail">
-                        <img class='ContactImage' src="../Resources/mail.png" alt="mail" />
+                        <img class='ContactImage' src="./Resources/mail.png" alt="mail" />
                         <h6 class='ContactMail'>lionhospital@gmail.com</h6>
                     </div>
                 </div>
@@ -418,7 +421,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
+        <script>
+            function redirectTo() {
+                window.location.href = 'http://www.poloscananddiagnostics.com/book-scanning'; // Replace with your YouTube URL
+            }
+        </script>
 
 </body>
 

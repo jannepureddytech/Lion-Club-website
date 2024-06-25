@@ -1,6 +1,6 @@
 .OurDoctor {
     flex-direction: column;
-    padding: 2%;
+    padding: 1%;
     margin-inline: 4%;
 }
 
@@ -82,4 +82,53 @@
 
 .marginleft {
     margin-left: 70px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .DoctorProfileImage {
+        height: 150px;
+    }
+    .DrProfileImage{
+        height: 150px;
+    }
+    .doctorH2 {
+        font-weight: 400;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .doctorH3{
+        font-size: 13px;
+    }
+    .doctorH4{
+        font-size: 13px;
+    }
+    .DoctorP{
+        font-size: 8px;
+    }
+   
+    .doctorName{
+        font-size: 13px;
+    }
+    .doctorDezignation{
+        font-size: 13px;
+    }
+    .coma{
+        height: 8px;
+    }
+    .marginleft {
+        margin-left: 10px;
+        width: 100%;
+    }
+}
+
+/* Landscape phones */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .DoctorProfileImage {
+        height: 150px;
+    }
+    .DrProfileImage{
+        height: 200px;
+    }
+   
 }

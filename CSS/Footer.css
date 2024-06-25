@@ -5,7 +5,7 @@
     background-color:  #171B2A;
     padding: 10px;
     color: white;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .companycontacts{
@@ -42,8 +42,6 @@
     flex-direction: column;
     width: 40%;
     justify-content: left;
-    
-
 }
 .Servicess{
     padding: 10px;
@@ -150,4 +148,97 @@
     height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+@media only screen and (max-width: 1000px) {
+   .MainContainer{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5px;
+    
+   }
+
+   .section-1{
+    flex-direction: column;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+   }
+   .companycontacts{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   }
+
+   .logo{
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+
+   }
+   .aboutjprt{
+    font-size: 10px;
+    padding: 5px;
+    text-align: center;
+   }
+
+   .MainInfo{
+    padding: 5px;
+    padding-top: 5px;
+    width: 40%;
+   }
+   .h4tag {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+   }
+   .ulist{
+   
+    width: 100%;
+    padding: 0px;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+   }
+   .list{
+    font-size: 15px;
+    align-items: center;
+   }
+   .Servicess{
+    padding: 5px;
+    padding-top: 5px;
+    width: 40%;
+   }
+   .Address{
+    padding: 5px;
+    padding-top: 5px;
+    width: 100%;
+  
+   }
+   .h2tag{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+   }
+   .h5tag{
+    font-size: 15px;
+    text-align: center;
+   }
+   .ContactImage{
+    width: 20px;
+    height: 20px;
+   }
+   .ContactMail{
+    font-size: 15px;
+    text-align: center;
+   }
+   .h3tag{
+    font-size: 15px;
+   }
+   .Mail{
+    display: flex;
+    justify-content: center;
+}
 }

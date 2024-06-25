@@ -20,6 +20,7 @@
 
 </head>
 
+
 <body>
 
     <div class="mainHeader">
@@ -42,13 +43,13 @@
         </div>
 
     </div>
-    
+
 
 
     <header class="header fixed">
         <img class='logoImage' src="./Resources/logo-main1.png" alt="logo" />
         <div class="PhoneHeader">
-            <button class="Dropdownn  " type="button" data-bs-toggle="dropdownn" aria-expanded="false">
+            <button class="Dropdown PhoneDropdownButton " type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <img class="PhoneMenu" src="./Resources/menuWhite.png" alt="">
             </button>
             <ul class="dropdown-menu ">
@@ -60,7 +61,6 @@
                 <li><a class="dropdown-item" href="./fullgallery.html">Gallary</a></li>
                 <li><a class="dropdown-item" href="./ourdoctors.html">Our Doctor</a></li>
                 <li><a class="dropdown-item" href="./review.html">Review</a></li>
-              
             </ul>
         </div>
 
@@ -81,7 +81,6 @@
             <h4 class='HeaderButton'> <a href="./fullgallery.html" id="atag">Gallery</a></h4>
             <h4 class='HeaderButton'> <a href="./ourdoctors.html" id="atag">Our Doctors</a></h4>
             <h4 class='HeaderButton'> <a href="./review.html" id="atag">Reviews</a></h4>
-            <button type="button " class="btn  sliderButton">Contact Us</button>
         </div>
     </header>
 
@@ -90,27 +89,53 @@
             <div class="carousel-inner BannerHeight">
                 <div class="carousel-item active slider-image ">
                     <img class="d-block c-image" src="./Resources/bghome1.png" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block sliderContentt ">
-
+                    <div class="carousel-caption d-none d-md-block sliderContentt">
                         <span class="h1tag">Dr. JR Reddy Lions Hospital <br> Is Best In <span class="h1tag2"></span>
-                        </span> </span>
+                        </span>
                         <script>
                             const typedText = document.querySelector('.h1tag2');
-                            const textToType = 'UROLOGY ...';
+                            const phrases = [
+                                'UROLOGY ...',
+                                'Ortho / Trauma...',
+                                'Emergency 24*7...',
+                                'Emergency ambulance 24*7...',
+                                'General BP / Thyroid / Diabetic ...',
+                                'Maternity / Infertility ...',
+                                'Laparoscopic surgeries...',
+                                'ENT...',
+                                'Urology ...',
+                                'Nephrology ...',
+                                'Neurology ...',
+                                'Pediatric...'
+                            ];
 
+                            let phraseIndex = 0;
                             let charIndex = 0;
 
-                            function typeChar() {
-                                if (charIndex < textToType.length) {
-                                    typedText.textContent += textToType[charIndex];
-                                    charIndex++;
-                                    setTimeout(typeChar, 100);
+                            function typePhrase() {
+                                if (phraseIndex < phrases.length) {
+                                    const textToType = phrases[phraseIndex];
+                                    if (charIndex < textToType.length) {
+                                        typedText.textContent += textToType[charIndex];
+                                        charIndex++;
+                                        setTimeout(typePhrase, 100);
+                                    } else {
+                                        phraseIndex++;
+                                        if (phraseIndex >= phrases.length) {
+                                            phraseIndex = 0;
+                                        }
+                                        charIndex = 0;
+                                        setTimeout(() => {
+                                            typedText.textContent = '';
+                                            typePhrase();
+                                        }, 1000);
+                                    }
                                 }
                             }
 
-                            typeChar();
+                            typePhrase();
                         </script>
-                    </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,13 +146,15 @@
         <h4 class="AboutUs Exo">About Us </h4>
         <div class="AboutUsSection1">
             <div class="AboutUsData">
-                <h2 class="AboutUsHeading  Yaldevi">JR. REDDY LIONS CLUB HOSPITAL</h2>
-                <p class="AboutUsPara lato">J R Reddy Lions Club Hospital is multispecialty, advanced and friendly
+                <h2 class="AboutUsHeading  Yaldevi">JR. REDDY LIONS MULTISPECIALITY HOSPITAL</h2>
+                <p class="AboutUsPara lato">J R Reddy Lions Multispeciality Hospital is multispecialty, advanced and
+                    friendly
                     hospital was established in September 2014 by Dr.J.Ramu Reddy & Dr.T.Mahathi, both a visionaries in
                     health industry to deliver excellent healthcare solutions to the masses at a low cost with an aim of
                     customer satisfaction.</p>
                 <br>
-                <p class="AboutUsPara lato">J R Reddy Lions Club Hospital is a Govt Regd., 50 bedded hospital with
+                <p class="AboutUsPara lato">J R Reddy Lions Multispeciality Hospital is a Govt Regd., 50 bedded hospital
+                    with
                     economy, Pvt. & deluxe rooms. It’s well equipped with latest state of the art medical equipment like
                     Digital XRay, computerized lab with auto analyzers, ICU with Ventilators and Modern labour room to
                     deliver quality treatment.</p>
@@ -144,7 +171,10 @@
 
     <div class="homeSerive">
         <h2 class="textcenter headingServicesH2">Services</h2>
-        <p class="textcenter lato ServicesPTag">J R Reddy Lions Club Hospital is a Govt Regd., 50 bedded hospital with economy, Pvt. & deluxe rooms. It’s well equipped with latest state of the art medical equipment like Digital XRay, computerized lab with auto analyzers, ICU with Ventilators and Modern labour room to deliver quality treatment.</p>
+        <p class="textcenter lato ServicesPTag">J R Reddy Lions Club Hospital is a Govt Regd., 50 bedded hospital with
+            economy, Pvt. & deluxe rooms. It’s well equipped with latest state of the art medical equipment like Digital
+            XRay, computerized lab with auto analyzers, ICU with Ventilators and Modern labour room to deliver quality
+            treatment.</p>
         <div class="LabServicesRow flexjcac">
             <div id="LabServicess" class=" flexjcac" style="background-color: #001958;">
                 <div class="LabServiceImage flexjcac">
@@ -155,11 +185,12 @@
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Ambulance 24/7</h3>
-                    <p class="textcenter  LabServiceP lato">We have gynecologists, cardiologists,neurologists, neurosurgeons, on 24×7</p>
+                    <p class="textcenter  LabServiceP lato">We have gynecologists, cardiologists, neurologists,
+                        neurosurgeons, on 24×7</p>
 
                 </div>
             </div>
-            <div id="LabServicess"  class=" flexjcac" style="background-color: #FFD500;">
+            <div id="LabServicess" class=" flexjcac" style="background-color: #FFD500;">
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
                         <img src="./Resources/emergencyService/heart.png" alt="">
@@ -168,11 +199,12 @@
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Emergence treatment 24/7</h3>
-                    <p class="textcenter  LabServiceP lato">We have gynecologists, cardiologists,neurologists, neurosurgeons, on 24×7 .</p>
+                    <p class="textcenter  LabServiceP lato">We have gynecologists, cardiologists, neurologists,
+                        neurosurgeons, on 24×7 .</p>
 
                 </div>
             </div>
-            <div id="LabServicess"  class=" flexjcac" style="background-color: #008D85;">
+            <div id="LabServicess" class=" flexjcac" style="background-color: #008D85;">
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
                         <img src="./Resources/emergencyService/heart.png" alt="">
@@ -181,14 +213,15 @@
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Laboratory</h3>
-                    <p class="textcenter  LabServiceP lato">A laboratory is a facility that provides conditions in which scientific or technological research,</p>
+                    <p class="textcenter  LabServiceP lato">A laboratory is a facility that provides conditions in which
+                        scientific or technological research,</p>
 
                 </div>
             </div>
 
         </div>
         <div class="LabServicesRow flexjcac">
-            <div id="LabServicess"  class=" flexjcac" style="background-color: #E9726A;">
+            <div id="LabServicess" class=" flexjcac" style="background-color: #E9726A;">
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
                         <img src="./Resources/emergencyService/heart.png" alt="">
@@ -197,11 +230,12 @@
                 </div>
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Dental</h3>
-                    <p class="textcenter  LabServiceP lato">We Follow Stringent Disinfection Protocols To Ensure Safe Dental Care. Team of</p>
+                    <p class="textcenter  LabServiceP lato">We Follow Stringent Disinfection Protocols To Ensure
+                        Safe Dental Care. Team of</p>
 
                 </div>
             </div>
-            <div id="LabServicess"  class=" flexjcac" style="background-color: #8300C1;">
+            <div id="LabServicess" class=" flexjcac" style="background-color: #8300C1;">
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
                         <img src="./Resources/emergencyService/heart.png" alt="">
@@ -211,12 +245,13 @@
                 <div class="LabServiceText">
                     <h3 class="textcenter LabServiceH3 Yaldevi">Physiotherapy</h3>
 
-                    <p class="textcenter  LabServiceP lato">Physiotherapy helps to restore movement and function when someone</p>
+                    <p class="textcenter  LabServiceP lato">Physiotherapy helps to restore movement and function when
+                        someone</p>
 
 
                 </div>
             </div>
-            <div id="LabServicess"  class=" flexjcac" style="background-color: #1C8D00;">
+            <div id="LabServicess" class=" flexjcac" style="background-color: #1C8D00;">
                 <div class="LabServiceImage flexjcac">
                     <div class="LabServiceBackground flexjcac">
                         <img src="./Resources/emergencyService/heart.png" alt="">
@@ -231,7 +266,7 @@
             </div>
 
         </div>
-        
+
 
     </div>
 
@@ -241,7 +276,7 @@
 
         <div class="Top_bar">
             <h1>Gallery</h1>
-            <button id="viewAllBtn" class="ViewButton"><a href="../HTML/full_gallery.html">ViewAll</a></button>
+            <button id="viewAllBtn" class="ViewButton"><a href="./fullgallery.html">ViewAll</a></button>
         </div>
         <div class="first_gallery">
             <div class="gallery-item1">
@@ -275,8 +310,8 @@
     </div>
 
 
-  
-    
+
+
     <footer>
 
 
@@ -284,7 +319,8 @@
             <div class="section-1 ">
                 <div class="companycontacts">
                     <img class='logo' src="./Resources/logo-main1.png" alt="logo" />
-                    <h6 class="aboutjprt exo-2">J R Reddy Lions Club Hospital is a Govt Regd., 50 bedded hospital with economy, Pvt. & deluxe rooms.
+                    <h6 class="aboutjprt exo-2">J R Reddy Lions Club Hospital is a Govt Regd., 50 bedded hospital with
+                        economy, Pvt. & deluxe rooms.
                     </h6>
                     <div class="socialMediaHandel">
                         <!-- <img class='socialmediaImages' src="./Resources/instagram.png" alt="Instagram" />
@@ -319,7 +355,8 @@
                     </ul>
                 </div>
                 <div class="Address exo-2">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d578.0385677266498!2d78.62323170068723!3d17.478553867518883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9dcf6d382b71%3A0x7b4f6235e87a0d7e!2sJ%20R%20Reddy%20Lions%20hospital!5e0!3m2!1sen!2sin!4v1718342553530!5m2!1sen!2sin" ></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d578.0385677266498!2d78.62323170068723!3d17.478553867518883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9dcf6d382b71%3A0x7b4f6235e87a0d7e!2sJ%20R%20Reddy%20Lions%20hospital!5e0!3m2!1sen!2sin!4v1718342553530!5m2!1sen!2sin"></iframe>
                     <div class="MapAddress">
                         <h2 class="h2tag">Address : </h2>
                         <h5 class="h5tag">Rampally Main Rd, TPS Colony, Nagaram, Secunderabad, Telangana 501301
@@ -340,7 +377,7 @@
         </div>
     </footer>
 
-    
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -357,8 +394,8 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    
-    
+
+
 </body>
 
 </html>

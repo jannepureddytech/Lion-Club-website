@@ -116,6 +116,7 @@ input[type=radio] {
 
 .star_container {
     text-align: right;
+    
 }
 
 .rating_container {
@@ -142,7 +143,7 @@ p {
 }
 
 .overall_star_container {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 41px;
 }
@@ -150,3 +151,37 @@ p {
 .submitbtn {
     width: 50%;
 }
+
+@media only screen and (max-width: 500px) {
+    .star {
+        color: black;
+        transition: color 0.1s;
+        width: 44.74px;
+        height: 20px;
+        gap: 0px;
+        opacity: 1px;          
+        text-shadow: 
+        1px 1px 1px #000000, 
+        -1px 1px 1px #000000, 
+        1px -1px 1px #000000, 
+        -1px -1px 1px #000000;
+    
+    }
+    .ReviwPTag{
+        font-size: 20px;
+        text-align: center;
+    }
+    .rating {
+        display: flex;
+        flex-direction: column;
+    }
+    .star_container {
+        text-align: center;
+        margin-top:-40px;
+    }
+    .rating_container {
+        text-align: center;
+    }
+    
+}
+

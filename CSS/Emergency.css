@@ -71,24 +71,31 @@
 /* Portrait phones */
 @media screen and (max-width: 600px) {
     .imageLite {
-        display: none; 
+        display: none;
     }
 
-    .emergencyServicesRow{
+    .emergencyServicesRow {
         flex-direction: column;
     }
-   
-  }
-  
-  /* Landscape phones */
-  @media screen and (min-width: 600px) and (max-width: 1024px) {
-    .imageLite {
-        display: none; 
+
+    .emergencyService {
+        width: 100%;
     }
-    
-    .emergencyServicesRow{
-        flex-direction: column;
-    }
-   
+
 }
-  
+
+/* Landscape phones */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .imageLite {
+        display: none;
+    }
+
+    .emergencyServicesRow {
+        flex-direction: column;
+    }
+
+    .emergencyService {
+        width: 100%;
+    }
+
+}
