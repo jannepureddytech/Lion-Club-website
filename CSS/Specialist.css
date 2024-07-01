@@ -60,6 +60,17 @@
     .SpecialistServiceH3{
         font-size: 25px;
     }
+    .SpecialistServiceText {
+        width: 100%;
+    }
+    .SpecialistServiceP {
+        font-size: 13px;
+        color: white;
+        font-weight: 300;
+        line-height: 2;
+        margin: 1px;
+        width: 100%;
+    }
 }
 
 /* Landscape phones */
@@ -72,5 +83,16 @@
     }
     .SpecialistServiceH3{
         font-size: 35px;
+    }
+    .SpecialistServiceText {
+        width: 100%;
+    }
+    .SpecialistServiceP {
+        font-size: 13px;
+        color: white;
+        font-weight: 300;
+        line-height: 2;
+        margin: 1px;
+        width: 100%;
     }
 }

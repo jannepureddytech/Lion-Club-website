@@ -15,6 +15,7 @@
 .emergencyServicesRow {
 
     width: 100%;
+    height: 100%;
 }
 
 .emergencyService {
@@ -23,6 +24,7 @@
     width: 50%;
     flex-direction: column;
     border-radius: 10px;
+    height: 100%;
 
 }
 
@@ -81,6 +83,16 @@
     .emergencyService {
         width: 100%;
     }
+    .emergencyServiceText {
+        width: 100%;
+    }
+    .emergencyServiceP {
+        font-size: 15px;
+        color: white;
+        font-weight: 300;
+        line-height: 1.5;
+        margin: 5px;
+    }
 
 }
 
@@ -97,5 +109,9 @@
     .emergencyService {
         width: 100%;
     }
+    .emergencyServiceText {
+        width: 100%;
+    }
+    
 
 }
